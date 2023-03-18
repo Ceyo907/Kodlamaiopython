@@ -1,3 +1,7 @@
+from human import Human
+import matematik as math
+math.bol(10,2)
+
 faiz = 1.59
 vade = 36
 krediAdi = "İhtiyaç Kredisi"
@@ -131,7 +135,24 @@ def calculateAndReturn(price,discount):
 yeniFiyat = calculateAndReturn(200,50)
 print(yeniFiyat)
 
+print("")
+
 
 # sınıflar => claslar
 # modules
 # paket yönetimi
+
+# self => this parametresi nesnenin içindeki alanlara erişmek için self kullanılır
+# instance => örnek 
+human1 = Human("Enes")
+human1.talk("Merhaba")
+human1.walk()
+print(human1)
+
+
+human2=Human("Halit")
+human2.talk("Selam")
+human2.walk()
+print(human2)
+
+Human("Ceyhun").talk("Merhaba")
